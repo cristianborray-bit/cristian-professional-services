@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian Borray - Automatización para Contadores y PYMES</title>
+    <meta name="description" content="Automatización inteligente para contadores y PYMES en Chía. Reduce 15-30 horas semanales de trabajo repetitivo.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E40AF',
+                        secondary: '#F59E0B',
+                        accent: '#FCD34D',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-primary">CB</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#servicios" class="text-gray-600 hover:text-primary transition">Servicios</a>
+                    <a href="#proceso" class="text-gray-600 hover:text-primary transition">Proceso</a>
+                    <a href="#testimonios" class="text-gray-600 hover:text-primary transition">Testimonios</a>
+                    <a href="#contacto" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Agenda Gratis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Deja que la tecnología<br>haga el trabajo pesado
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-blue-100">
+                Automatización inteligente para contadores y PYMES en Chía
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contacto" class="bg-secondary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-600 transition shadow-lg">
+                    Descubre cuánto tiempo puedes ahorrar →
+                </a>
+                <a href="#servicios" class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-primary transition">
+                    Ver servicios
+                </a>
+            </div>
+            <div class="mt-12 flex justify-center items-center gap-8 text-sm text-blue-200">
+                <span>✓ Sin compromiso</span>
+                <span>✓ Auditoría gratuita</span>
+                <span>✓ Resultados en 7 días</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credenciales -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-500 mb-6">Respaldado por</p>
+            <div class="flex flex-wrap justify-center gap-8 items-center opacity-60">
+                <div class="text-2xl font-bold text-gray-400">Avista</div>
+                <div class="text-2xl font-bold text-gray-400">S&P Global</div>
+                <div class="text-2xl font-bold text-gray-400">SIIGO</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Servicios que transforman tu negocio</h2>
+                <p class="text-xl text-gray-600">Tecnología probada para resultados reales</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Facturas que se hacen solas</h3>
+                    <p class="text-gray-600 mb-4">Conecta Excel con SIIGO automáticamente. Sin copiar y pegar.</p>
+                    <div class="flex items-center text-secondary font-semibold">
+                        <span class="text-2xl mr-2">5h</span>
+                        <span class="text-sm">ahorradas/semana</span>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-14 h-14 bg-yellow-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Recupera tu tiempo</h3>
+                    <p class="text-gray-600 mb-4">Deja que los bots hagan lo aburrido. Tú enfócate en crecer.</p>
+                    <div class="flex items-center text-secondary font-semibold">
+                        <span class="text-2xl mr-2">15-30h</span>
+                        <span class="text-sm">liberadas/semana</span>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Transforma tu negocio</h3>
+                    <p class="text-gray-600 mb-4">Estrategia tecnológica personalizada para escalar sin aumentar costos.</p>
+                    <div class="flex items-center text-green-600 font-semibold">
+                        <span class="text-2xl mr-2">2x</span>
+                        <span class="text-sm">más clientes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyecto Destacado -->
+    <section class="py-20 bg-gray-900 text-white px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-secondary font-semibold text-sm uppercase tracking-wide">Caso de Éxito</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">BOTRAY.ai</h2>
+                    <p class="text-gray-300 text-lg mb-6">
+                        App que automatiza la carga de facturas desde Excel hacia SIIGO. 
+                        Reduce el trabajo manual en 70%.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Procesamiento automático de facturas
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Integración nativa con SIIGO
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Reducción de 70% en tiempo manual
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="inline-block bg-secondary text-white px-8 py-3 rounded-full font-semibold hover:bg-yellow-600 transition">
+                        Quiero algo similar
+                    </a>
+                </div>
+                <div class="bg-gray-800 rounded-2xl p-8">
+                    <div class="text-center">
+                        <div class="text-6xl font-bold text-secondary mb-2">70%</div>
+                        <div class="text-gray-400">Reducción de trabajo manual</div>
+                    </div>
+                    <div class="mt-8 grid grid-cols-2 gap-4 text-center">
+                        <div class="bg-gray-700 rounded-lg p-4">
+                            <div class="text-2xl font-bold text-white">5h</div>
+                            <div class="text-sm text-gray-400">ahorradas/semana</div>
+                        </div>
+                        <div class="bg-gray-700 rounded-lg p-4">
+                            <div class="text-2xl font-bold text-white">0</div>
+                            <div class="text-sm text-gray-400">errores de copiado</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso -->
+    <section id="proceso" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Cómo trabajamos</h2>
+                <p class="text-xl text-gray-600">De la auditoría a la automatización en 3 pasos</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">1</div>
+                    <h3 class="text-xl font-bold mb-3">Auditoría gratuita</h3>
+                    <p class="text-gray-600">30 minutos analizando tus procesos actuales. Identificamos oportunidades de automatización.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">2</div>
+                    <h3 class="text-xl font-bold mb-3">Propuesta personalizada</h3>
+                    <p class="text-gray-600">Recibes un plan detallado con ROI estimado, tiempos y precios claros.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">3</div>
+                    <h3 class="text-xl font-bold mb-3">Implementación en 7 días</h3>
+                    <p class="text-gray-600">Tu automatización funcionando. Capacitación incluida. Soporte continuo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonio -->
+    <section id="testimonios" class="py-20 bg-blue-50 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <svg class="w-12 h-12 text-primary mx-auto mb-6 opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+            </svg>
+            <blockquote class="text-2xl md:text-3xl font-medium text-gray-900 mb-6">
+                "La app que Cristian desarrolló para nosotros fue espectacular. Redujo nuestro trabajo en 70%."
+            </blockquote>
+            <div class="text-gray-600">
+                <span class="font-semibold">Cliente satisfecho</span> · Contador independiente en Chía
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-20 gradient-bg px-4">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">¿Listo para automatizar?</h2>
+            <p class="text-xl mb-8 text-blue-100">
+                Agenda tu auditoría gratuita de 30 minutos.<br>
+                Sin compromiso, solo valor.
+            </p>
+            <a href="https://wa.me/573XXXXXXXXX" class="inline-block bg-secondary text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-yellow-600 transition shadow-lg">
+                Agenda tu auditoría gratuita →
+            </a>
+            <p class="mt-6 text-sm text-blue-200">
+                También puedes escribirnos a <a href="mailto:cristian@ejemplo.com" class="underline">cristian@ejemplo.com</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <span class="text-2xl font-bold text-white">CB</span>
+                    <p class="mt-4">Automatización inteligente para contadores y PYMES en Chía, Colombia.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contacto</h4>
+                    <p>Chía, Cundinamarca</p>
+                    <p class="mt-2">
+                        <a href="https://wa.me/573XXXXXXXXX" class="hover:text-white transition">WhatsApp</a>
+                    </p>
+                    <p>
+                        <a href="https://co.linkedin.com/in/cristianborray" class="hover:text-white transition">LinkedIn</a>
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2">
+                        <li>Automatización de facturación</li>
+                        <li>Reducción de tareas repetitivas</li>
+                        <li>Consultoría digital</li>
+                        <li>Integración SIIGO</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
+                <p> 2026 Cristian Borray. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
